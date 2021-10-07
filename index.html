@@ -1,12 +1,92 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Hola mundo</title>
+<title>Pokedex</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="grey" color="white">
+<body bgcolor="#C2F5FF">
 <center>
-<h1 style="font-size:50px;">Hola mundo :D</h1>
-<marquee>tres tristes tigres comen trigo en un trigal</marquee>
-<p>My first paragraph</p>
+<div width="100%" style="background-color:black;"><font color="white" size="6"><b>Pokedex</b></font></div>
+<br><!--Buscador de Pokemons-->
+<table border="0">
+<tr><td>Name:<input type="text"></td>
+<td style="padding:10px;">Type: <select id="Pokemons" name="Pokes">
+    <option value="all">all</option>
+    <option value="grass">grass</option>
+    <option value="fire">fire</option>
+    <option value="poison">poison</option>
+  </select></td>
+<td>Sort: <select id="Sort" name="List">
+    <option value="First">Lowest Number (First)</option>
+    <option value="Last">Higher Number (Last)</option>
+  </select></td></tr>
+</table>
+<br><!--Lista de Pokemons-->
+<div class="container">
+<div class="row">
+<div class="col-3 card">
+<img src="pokemon/img/abra.png">
+<div class="description">
+<h2>Abra</h2>
+<h3 class="Psiquico" align="center">Psiquico</h3>
+</div></div>
+<div class="col-3 card">
+<img src="pokemon/img/aerodactyl.png">
+<div class="description">
+<h2>Aerodactyl</h2>
+<h3 class="Volador" align="center">Volador</h3>
+</div></div>
+<div class="col-3 card">
+<img src="pokemon/img/alakazam.png">
+<div class="description">
+<h2>Alakazam</h2>
+<h3 class="Psiquico" align="center">Psiquico</h3>
+</div></div>
+<div class="col-3 card">
+<img src="pokemon/img/arbok.png">
+<div class="description">
+<h2>Arbok</h2>
+<h3 class="Veneno" align="center">Veneno</h3>
+</div></div>
+::after
+</div>
+<div class="row">
+<div class="col-3 card">
+<img src="pokemon/img/articuno.png">
+<div class="description">
+<h2>Articuno</h2>
+<h3 class="Psiquico" align="center">Psiquico</h3><h3 class="Volador" align="center">Volador</h3>
+</div></div>
+<div class="col-3 card">
+<img src="pokemon/img/kakuna.png">
+<div class="description">
+<h2>Kakuna</h2>
+<h3 class="Bicho" align="center">Bicho</h3><h3 class="Veneno" align="center">Veneno</h3>
+</div></div>
+<div class="col-3 card">
+<img src="pokemon/img/hypno.png">
+<div class="description">
+<h2>Hypno</h2>
+<br>
+<h3 class="Psiquico" align="center">Psiquico</h3>
+</div></div>
+<div class="col-3 card">
+<img src="pokemon/img/jynx.png">
+<div class="description">
+<h2>Jynx</h2>
+<h3 class="Hielo" align="center">Hielo</h3><h3 class="Psiquico" align="center">Psiquico</h3>
+</div></div>
+::after
+</div></div>
 </center>
 </body>
 </html>
+
+<!--
+<div class="card">
+<img src="pokemon/img/.png">
+<div class="description">
+<h2>Nombre</h2>
+<h3 class="" align="center"></h3>
+</div></div>
+-->
